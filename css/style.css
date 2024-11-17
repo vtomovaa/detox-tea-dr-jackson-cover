@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+
+
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+
+header {
+    background-color: #fff;
+}
+
+header ul li a {
+    color: #333;
+    text-transform: uppercase;
+}
+
+.header-row {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+div.logo {
+    margin: 15px;
+    width: 20%;
+}
+
+/* Hero */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 40px auto;
+}
+
+.hero-container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #59504e;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #59504e;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.hero-text {
+    margin: auto;
+}
+
+.hero-img {
+    width: 80%;
+    margin: auto;
+}
+
+.order-btn {
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-btn a {
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #59504e;
+    color: white;
+    padding: 15px 60px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.order-btn a {
+    border-radius: 20px;
+    background: linear-gradient(to right, #59504e, #333);
+}
+
+.order-btn a:hover {
+    background-color: rgba(30, 48, 19, 0.841);
+}
+
+/* PRODUCT FEATURES */
+
+.product-features {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ingredient {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.ingredient img {
+    border-radius: 8px;
+}
+
+.ingredient-text {
+    text-align: center;
+    margin-top: 36%;
+}
+
+.aniseed {
+    width: 94%;
+}
+
+.how-to-use,
+.brand-ethos {
+    margin-top: 20px;
+}
+
+.brand-ethos p {
+    margin-bottom: 10px;
+}
+
+
+.future-container-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.future-container-img img {
+    width: 130px;
+}
+
+.future-container h2 {
+    text-align: center;
+}
+
+/* Testimonials */
+
+.testimonials {
+    background-color: #fff;
+}
+
+.testimonials-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-reviews span {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.testimonials-reviews img {
+    width: 8%;
+}
+
+.review_content p {
+    width: 60%;
+}
+
+.testimonials p.based {
+    text-align: center;
+    margin: 0;
+}
+
+hr {
+    width: 90%;
+    border-top: 1.5px solid #70797c;
+    margin: 15px auto;
+}
+
+.testimonials h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+.review .author {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    column-gap: 25px;
+    margin-bottom: 10px;
+}
+
+.verified img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.verified {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.review {
+    width: 80%;
+    margin: auto;
+}
+
+.review_content p {
+    width: 60%;
+}
+
+/* Order form */
+
+div.forma {
+    margin: 8vh auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.forma div.img-order {
+    width: 90%;
+    margin: auto;
+}
+
+form h1 {
+    text-align: center;
+}
+
+div.forma form {
+    margin: auto;
+}
+
+div.forma form div.pole {
+    margin: 1.7vh;
+    text-align: center;
+}
+
+div.forma form div.pole input {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+div.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.all-h2 {
+    text-align: center;
+}
+
+.price .order-btn a {
+    font-size: 18px;
+    padding: 12px 50px;
+
+}
+
+.price h2 {
+    margin: 0;
+}
+
+/* footer */
+footer div.links {
+    text-align: center;
+    margin: 15px;
+}
+
+footer a {
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p.disclaimer {
+    width: 70%;
+    margin: 10px auto;
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 14px;
+}
+
+
+.scores-img {
+    margin: auto;
+}
+
+@media screen and (max-width: 1763px) {
+
+    .future-container-img img {
+        width: 105px;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 85%;
+    }
+
+    .header-row {
+        display: flex;
+        width: 85%;
+
+    }
+
+    .future-container-img img {
+        width: 116px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    div.forma {
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    .order-btn a {
+        font-size: 18px;
+        color: white;
+        padding: 13px 50px;
+    }
+
+    header ul li {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    div.logo {
+        margin: 15px;
+        width: 20%;
+    }
+
+    .future-container-img img {
+        width: 95px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 994px) {
+
+    div.forma form div.pole input {
+        padding: 7px 12px;
+    }
+
+    div.forma div.img-order {
+        width: 100%;
+        margin: auto;
+    }
+
+    header ul li {
+        margin: 7px;
+        font-size: 14px;
+    }
+
+    .price .order-btn a {
+        font-size: 16px;
+        padding: 10px 34px;
+    }
+
+    p {
+        line-height: 1.1;
+        letter-spacing: 0.6px;
+    }
+
+    .future-container-img img {
+        width: 78px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        display: block;
+    }
+
+    .header-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div.logo {
+        margin: auto;
+    }
+
+    header ul li {
+        margin: 10px;
+    }
+
+    div.logo {
+        margin: 15px;
+        width: 37%;
+    }
+
+    .future-container-img img {
+        width: 115px;
+    }
+
+    .future-container-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .testimonials-reviews img {
+        width: 21%;
+    }
+
+    div.forma {
+        display: block;
+
+    }
+
+    div.forma div.img-order {
+        width: 75%;
+        margin: auto;
+    }
+
+    div.forma {
+        margin-top: 7px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    .header-row {
+        display: flex;
+        width: 95%;
+    }
+
+    header ul li {
+        margin: 5px;
+    }
+
+    .hero-text p,
+    .hero-text h1 {
+        text-align: center;
+    }
+
+    .review-div {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+
+    }
+
+    .column-div {
+        display: block;
+    }
+
+    p {
+        line-height: 1;
+        letter-spacing: 0.3px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    div.forma div.img-order {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer div.links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer a {
+        margin: 5px 0;
+    }
+
+    footer p.disclaimer {
+        width: 95%;
+    }
+
+    .testimonials-reviews img {
+        width: 40%;
+    }
+
+    .review_content p {
+        width: 95%;
+    }
+
+    div.forma {
+        margin: 40px auto;
+        width: 90%;
+    }
+}
